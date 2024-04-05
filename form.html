@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 양식 작성하기</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label>아이디: <input type="text" id="user_id" size="10" /></label>
+        <label
+          >비밀번호: <input type="password" id="user_pw" size="10"
+        /></label>
+        <input type="submit" value="로그인" />
+      </fieldset>
+    </form>
+    <form autocomplete="off">
+      <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+          <li>
+            <!-- for 속성은 참조한다는 의미 (label태그 안에 input을 넣는 방식을 사용해도된다) -->
+            <label for="user-name">이름</label>
+            <input type="text" id="user-name" />
+          </li>
+          <li>
+            <label for="addr">배송 주소</label>
+            <input type="text" id="addr" />
+          </li>
+          <li>
+            <label for="mail">이메일 주소</label>
+            <input type="text" id="mail" />
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form autocomplete="off">
+      <fieldset>
+        <legend>상품선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <label><input type="checkbox" value="s3" />선물용 3kg</label>
+        <input type="number" min="0" max="5" />개(최대 5개)
+        <label><input type="checkbox" value="s5" />선물용 5kg</label>
+        <input type="range" min="0" max="5" />개(최대 5개)
+        <label><input type="checkbox" value="f3" />가정용 3kg</label>
+        <label><input type="checkbox" value="f5" />가정용 5kg</label>
+      </fieldset>
+    </form>
+    <!-- readonly는 개인정보변경 아이디 수정안되는 기능같은것 입니다. -->
+    <input type="text" placeholder="보기만 하세요." readonly />
+
+    <!-- select, option 기능 -->
+    <select>
+      <option value="1">삼겹살</option>
+      <option value="2">항정살</option>
+      <option value="3">목살</option>
+      <option value="4">갈매기살</option>
+      <option value="5">앞다리살</option>
+    </select>
+  </body>
+</html>
