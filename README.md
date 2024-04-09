@@ -143,7 +143,7 @@ li {
 ## 3.9. 글자 간격을 조절하는 letter-spacing, word-spacing
 
 - letter-spacing: 자간
-- word-spacing: 단어와 단어사이의 간격을
+- word-spacing: 단어와 단어사이의 간격을 조절
 
 ## 3.10. 목록 스타일
 
