@@ -143,4 +143,71 @@ li {
 ## 3.9. 글자 간격을 조절하는 letter-spacing, word-spacing
 
 - letter-spacing: 자간
-- word-spacing: 단어와 단어사이의 간격을 조절
+- word-spacing: 단어와 단어사이의 간격을
+
+## 3.10. 목록 스타일
+
+### 3.10.1. 불릿 모양과 번호 스타일을 지정하는 list-style-type
+
+```html
+<nav style="list-style-type: circle">
+  <!-- list 개별적용 하고싶으면 각각 li 태그에 style 작성 -->
+  <li><a href="#">단체 여행</a></li>
+  <li><a href="#">맞춤 여행</a></li>
+  <li><a href="#">갤러리</a></li>
+  <li><a href="#">문의하기</a></li>
+</nav>
+```
+
+- disc : 채운 원 모양
+- circle : 빈 원 모양
+- square : 채운 사각형
+- decimal : 1부터 시작하는 10진수
+- decimal-leading-zero : 앞에 0이 붙는 10진수
+- lower-roman : 로마 숫자 소문자
+- upper-roman : 로마 숫자 대문자
+- lower-alpha 또는 lower-latin : 알파벳 소문자
+- upper-alpha 또눈 upper-latin : 알파벳 대문자
+- none : 불릿이나 숫자를 없앤다.
+
+### 3.10.2. 불릿 대신 이미지를 사용하는 list-style-image 속성
+
+```css
+ul {
+  list-style-image: url(".//image.png");
+}
+```
+
+### 3.10.3. 목록을 들여 쓰는 list-style-position 속성
+
+- inside
+- outside
+
+### 3.10.4. 목록 속성을 한꺼번에 표시하는 list-style
+
+### 3.10.5. 표 스타일
+
+# 4. 레이아웃을 구성하는 css 박스모델
+
+- 웹 문서에서 내용을 배치할 때는 각 요소를 박스 형태로 구성
+- 박스 모델은 실제 내용이 들어가는 콘텐츠 영역, 테두리, 여백으로 구성
+
+## 4.1. css와 박스모델
+
+- 웹 문서의 내용을 박스 형태로 정의하는 방법
+- 박스 모델이 모여서 웹 문서를 이룬다.
+- 박스 모델에는 마진, 패딩, 테두리 등 박스가 **여러 겹** 들어있다.
+
+### 4.1.1. 블록 레벨 요소와 인라인 레벨 요소
+
+- block 레벨 요소 : 태그를 사용해서 요소를 삽입했을때 혼자 **한 줄을** 차지하는 것, 당 요소의 너비는 100%
+  - h1, div, p ...
+- inline 레벨 요소 : 한 줄을 차지하지 않고, **콘텐츠 만큼만** 영역을 차지
+  - 따라서 한 줄에 인라인 레벨 요소를 여러 개 표시할 수 있다.
+  - span, img, strong, a ...
+
+### 4.1.2. 박스 모델의 기본 구성
+
+- 박스 모델은 콘텐츠 영역
+- 박스와 콘테츠 영역 사이의 여백인 패딩(padding)
+- 박스의 테두리 그리고 여러 박스 모델 사이의 여백인 마진(margin)
